@@ -1,0 +1,320 @@
+/* Resets */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/* Variables */
+:root{
+    --main-color:rgb(122, 54, 3);
+}
+ button{
+    padding:10px 20px;
+    background:var(--main-color);
+    border:none;
+    cursor:pointer;
+ }
+body{
+    background:rgb(14, 8, 8);
+    
+}
+/* Nav start */
+.fa{
+    font-size:41px;
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    padding-top:25px;
+    color:#fff;
+
+}
+  li {
+    display: inline;
+    list-style:none
+
+}
+li a{
+    color:#fff;
+    text-align:center;
+    margin-left:20px;
+    text-decoration:none;
+    padding-bottom:11px;
+}
+
+li a:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+    /* Nav end */
+
+    /* Header Start */
+    .header{
+       background:url(header.jpeg);
+       background-size:cover;
+       background-position:center;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       flex-direction:column;
+       text-align: center;
+       font-family:"Playfair Display",serif;
+       font-weight:normal;
+       position:relative;
+    }
+    .main-headings{
+     font-size:4rem;
+     position:absolute;
+     top:5%;
+     color:#fff; 
+    }
+    .primary-heading{
+        position:absolute;
+        margin-top:;
+        color:#fff;
+        font-size:3rem;
+        word-spacing:7px;
+        bottom:5%;
+    }
+    .main-btn{
+        border:none;
+        position:absolute;
+        padding:10px 20px;
+        background:var(--main-color);
+        bottom:-4%;
+        cursor:pointer;
+        transform:translateY(-1px);
+    }
+   /* Start Our Story start */
+   #our-story{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    margin-top:16%;
+    height:100vh;
+   }
+   .img{
+    background:url(our-story.webp);
+    width:400px;
+    height:400px;
+    background-position:center;
+    background-size:cover;
+   }
+   .title-style{
+    display:flex;
+    align-items:center;
+   }
+   .title{
+    font-size:3.5rem;
+    color:#fff;
+    font-family:"Playfair Display",serif;
+   }
+   .line{
+    background:#fff;
+    height:2px;
+    width:100px;
+    transform:translateX(-20px);
+   }
+   .section-content p{
+    color:#fff;
+    line-height:20px;
+    max-width:500px;
+    font-family:sans-serif;
+    margin: 20px 0;
+
+   }
+   .section-content button{
+    margin-top:-10px;
+   }
+    /*Our story end  */
+
+    /* Coffee Start */
+
+    .coffee-container{
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content: space-around;
+        margin-top:14px;
+    }
+    .content-section{
+        max-width:500px;
+        color:#fff;
+        font-family:sans-serif;
+        margin-top:20px;
+    }
+
+    .content-section p{
+        max-width:500px;
+    }
+    .title-two{
+        font-size:3rem;
+        font-family:"Playfair Display",serif;
+        font-weight:normal;
+        color:#fff;
+    }
+    .img-2{
+        width:400px;
+        height:400px;
+    }
+    .content-section button{
+        margin-top:20px;
+    }
+    /* coffee end */
+
+    /* Products start */
+    .products{
+        color:#fff;
+    }
+    .title-three{
+        font-family: "Playfair Display",serif;
+        font-size:4rem;
+        margin-top:6rem;
+        margin-left:8rem;  
+        margin-bottom:4rem;
+    }
+    .cards{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .card{
+        border:2px solid var(--main-color);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction:column;
+        height:400px;
+        width:300px;
+        padding:0 10px;
+        margin:90px 0;
+        position:relative;
+        font-family: sans-serif;
+    }
+    .img-one{
+        background: url(img-one.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+    .img-two{
+        background: url(img-two.jpeg);
+        background-size:cover;
+        background-position: center;
+    }
+    .img-three{
+        background: url(img-three.jpeg);
+        background-size:cover;
+        background-position: center;
+    }
+    .card-img{
+        position:absolute;
+        width:85px;
+        height: 85px;
+        top:-70px;
+    }
+    .card-title{
+        margin-top:1rem;
+    }
+   .cards .items p{
+    margin:15px 0;
+   }
+    
+    /* Products end */
+
+    /* footer start */
+    footer{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:wrap;
+        color:#fff;
+        height:500vh;
+
+    }
+    footer .container{
+        text-align:center;
+        max-width:300px;
+        margin:0 50px;
+    }
+    .heading-info{
+        margin-bottom:20px;
+    }
+    span{
+        color: var(--main-color);
+    }
+    footer .heading-info p{
+        color:#fff;
+        text-align:center;
+    }
+    .para{
+        text-align:center;
+        margin-top:23rem;
+
+    }
+    /* footer end */
+    /* project end */ 
+
+    /* Responsiveness
+    @media (max-width:760px)  {
+        .main-heaings, .primary-heading{
+            font-size:4rem;
+        }
+        .line{
+            display:none;
+            #our-story .title{
+                text-align:center;
+            }
+            .title-three{
+                display:none;
+            }
+        }
+    } */
+      /* Responsiveness*/
+  @media only screen and (max-width:76px){.main headings, .primary-heading{
+    font-size:2.5rem;
+    }
+    #our-story{
+    text-align:center;
+    }
+    
+    #our-story .title{
+    transform: translateX(50px);
+    }
+    #our-story .line{
+    display:none;
+    }
+    .content-section{
+    text-align:center;
+    }
+    #our-story .img-container .img{
+    width:70%;
+    text-align:center;
+    margin: 0 auto;
+    }
+    .coffee-container .img-container{
+    margin-top:5rem;
+    width:50%;
+    }
+    .title{
+    margin: 0 auto;
+    }
+    .title-two{
+    margin: 0 auto;
+    }
+    .title-three{
+    display:none
+    }
+    .para{
+    display:none;
+    
+    }
+    .header{
+        height:auto;
+        width: 100px;
+    }
+    }
